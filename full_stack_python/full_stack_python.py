@@ -11,7 +11,15 @@ class State(rx.State):
     
     def handle_title_input_change(self, val):
         self.label = val
+
+    def did_click(self):
+        print("Esta pagina de prueba comienza a ser productiva")
     ...
+
+def base_page():
+    return rx.container(
+        
+    )
 
 
 def index() -> rx.Component:
@@ -26,8 +34,10 @@ def index() -> rx.Component:
                 size="5",
             ),
         # Dinamic input form (input value)
+        # <input type='text' value='My value' />
             rx.input(
                 default_value=State.label,
+                on_click=State.did_click, #This will show on the console!
                 on_change=State.handle_title_input_change),
             rx.link(
                 rx.button("Check out our docs!"),
@@ -38,6 +48,7 @@ def index() -> rx.Component:
             justify="center",
             min_height="85vh",
         ),
+        #Building components
         rx.logo(),
     )
 
