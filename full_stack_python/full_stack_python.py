@@ -3,6 +3,7 @@
 import reflex as rx
 
 from rxconfig import config
+from .ui.base import base_page
 
 
 class State(rx.State):
@@ -16,16 +17,11 @@ class State(rx.State):
         print("Esta pagina de prueba comienza a ser productiva")
     ...
 
-def base_page():
-    return rx.container(
-        
-    )
 
 
 def index() -> rx.Component:
     # Welcome Page (Index)
-    return rx.container(
-        rx.color_mode.button(position="top-right"),
+    return base_page( 
         rx.vstack(
             rx.heading(State.label, size="9"),
             rx.text(
@@ -49,7 +45,7 @@ def index() -> rx.Component:
             min_height="85vh",
         ),
         #Building components
-        rx.logo(),
+        
     )
 
 
