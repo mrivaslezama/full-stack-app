@@ -17,6 +17,9 @@ def multi() -> rx.Component:
                     padding="2em"
                 ),
                 rx.box(
+                    rx.html(
+                        "<img src='https://reflex.dev/reflex_banner.png' />"
+                     ),
                     rx.text("Esto sera un titulo", size="7"),
                     rx.link(
                         rx.text("https://www.youtube.com/watch?v=ITOZkzjtjUA", size="2"),

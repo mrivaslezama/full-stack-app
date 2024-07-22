@@ -21,6 +21,9 @@ def index() -> rx.Component:
             rx.text(
                 "Comentarios y estudios de analisis políticos, sociales y tecnológicos"
             ),
+            rx.html(
+                "<img src='https://reflex.dev/reflex_banner.png' />"
+            ),
               multi(),
               card(),
               try_some_toast(),
