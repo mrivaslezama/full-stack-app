@@ -7,13 +7,13 @@ def footer_item(text: str, href: str) -> rx.Component:
 def footer() -> rx.Component:
     return rx.flex(
         rx.heading(
-            "PRODUCTS", size="4", weight="bold", as_="h3"
+            "DESARROLLOS", size="4", weight="bold", as_="h3"
         ),
+        footer_item("Inicio", "/"),
         footer_item("Nosotros", "/nosotros"),
-        footer_item("Web Development", "/#"),
-        footer_item("E-commerce", "/#"),
+        footer_item("Contactanos", "/contactanos"),
         footer_item("Content Management", "/#"),
-        footer_item("Mobile Apps", "/#"),
+        footer_item("Web development", "/#"),
         spacing="4",
         text_align=["center", "center", "start"],
         flex_direction="column",

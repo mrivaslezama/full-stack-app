@@ -23,10 +23,9 @@ def navbar() -> rx.Component:
                     align_items="center",
                 ),
                 rx.hstack(
-                    navbar_link("Home", "/"),
-                    navbar_link("About", "/nosotros"),
-                    navbar_link("Pricing", "/#"),
-                    navbar_link("Contact", "/#"),
+                    navbar_link("Inicio", "/"),
+                    navbar_link("Nostros", "/nosotros"),
+                    navbar_link("Contactanos", "/contactanos"),
                     spacing="5",
                 ),
                 rx.hstack(

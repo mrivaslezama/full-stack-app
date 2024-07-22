@@ -4,6 +4,7 @@ from .nav import navbar
 
 from .foot import footer
 
+
 from rxconfig import config
 
 def base_page(child: rx.Component, *args, **kwargs) -> rx.Component:
@@ -15,6 +16,7 @@ def base_page(child: rx.Component, *args, **kwargs) -> rx.Component:
             padding="1em",
             width="100%",
         ),
+
         footer(),
         rx.logo(),
         rx.color_mode.button(position="bottom-left", id='my-light-mode-btn'),
