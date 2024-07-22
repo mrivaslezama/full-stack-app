@@ -7,3 +7,5 @@
 # Identifying rendered components in the browser --46:40
 
 # Full width navbar and content
+
+

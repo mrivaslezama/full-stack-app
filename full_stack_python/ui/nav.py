@@ -18,7 +18,7 @@ def navbar() -> rx.Component:
                         border_radius="25%",
                     ),
                     rx.heading(
-                        "Autana muebles", size="7", weight="bold"
+                        "MiguelRivas", size="2"
                     ),
                     align_items="center",
                 ),
@@ -84,4 +84,4 @@ def navbar() -> rx.Component:
         # z_index="5",
         width="100%",
         id="my-main-nav",
-    ),
+    )
