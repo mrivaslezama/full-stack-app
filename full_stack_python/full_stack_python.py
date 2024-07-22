@@ -5,6 +5,7 @@ from rxconfig import config
 from .ui.card import card
 from .ui.multi import multi
 from .ui.contact import contact_form
+from .ui.toast import try_some_toast
 from .ui.base import base_page
 
 
@@ -22,6 +23,7 @@ def index() -> rx.Component:
             ),
               multi(),
               card(),
+              try_some_toast(),
             spacing="5",
             justify="center",
             align="center",

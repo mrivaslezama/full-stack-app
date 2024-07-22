@@ -17,7 +17,7 @@ def card() -> rx.Component:
                                 width="100%",
                                 height="auto",
                             ),
-                    "Asesoramiento de imagen", size="4"
+                    "Asesoramiento de imagen", size="4"                    
                     ),
                
                 spacing="2",
