@@ -188,8 +188,6 @@ def pricing_cards() -> rx.Component:
     return rx.flex(
         card1(),
         card2(),
-        pricing_card_standard(),
-        pricing_card_popular(),
         
         spacing="6",
         flex_direction=["column", "column", "row"],
