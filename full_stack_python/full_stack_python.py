@@ -27,22 +27,22 @@ def index() -> rx.Component:
             rx.hstack(
                 rx.image(
                     src="/rails.png",
-                    width="8em",
-                    height="8em",
+                    width="6em",
+                    height="6em",
                     border_radius="50%",
                 margin_bottom="8px",
                 ),
                 rx.image(
                     src="/python.png",
-                    width="8em",
-                    height="8em",
+                    width="6em",
+                    height="6em",
                     border_radius="50%",
                 margin_bottom="8px",
                 ),
                 rx.image(
                     src="/reflex_banner.png",
-                    width="8em",
-                    height="8em",
+                    width="6em",
+                    height="6em",
                     border_radius="50%",
                 margin_bottom="8px",
                 ),
