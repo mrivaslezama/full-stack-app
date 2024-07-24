@@ -6,6 +6,7 @@ from .ui.card import card
 from .ui.multi import multi
 from .ui.contact import contact_form
 from .ui.toast import try_some_toast
+from .ui.avatar import avatar
 from .ui.base import base_page
 
 
@@ -17,13 +18,59 @@ class State(rx.State):
     
 def index() -> rx.Component:
     my_child = rx.vstack(
-            rx.heading("Consultor", size="9"),
+              avatar(),
+            rx.heading("Hola, soy Miguel!", size="9"),
             rx.text(
-                "Comentarios y estudios de analisis políticos, sociales y tecnológicos"
+                "Desarrollador y asesor en tecnologías web, Ruby on Rails, Python, Reflex, postgresql y React ", size="7"
             ),
-            rx.html(
-                "<img src='https://reflex.dev/reflex_banner.png' />"
+            rx.hstack(
+                rx.image(
+                    src="/rails.png",
+                    width="150px",
+                    height="150px",
+                    border_radius="50%",
+                margin_bottom="8px",
+                ),
+                rx.image(
+                    src="/python.png",
+                    width="150px",
+                    height="150px",
+                    border_radius="50%",
+                margin_bottom="8px",
+                ),
+                rx.image(
+                    src="/reflex_banner.png",
+                    width="150px",
+                    height="150px",
+                    border_radius="50%",
+                margin_bottom="8px",
+                ),
+                rx.image(
+                    src="/postgres.png",
+                    width="150px",
+                    height="150px",
+                    border_radius="50%",
+                margin_bottom="8px",
+                ),
+                rx.image(
+                    src="/react.png",
+                    width="150px",
+                    height="150px",
+                    border_radius="50%",
+                margin_bottom="8px",
+                )
+              ),
+
+            rx.heading("Proyectos", 
+            size="9",
+            padding_top="8rem"
             ),
+            rx.text(
+                "Proyectos desarrollados y activos", 
+                size="7",
+                padding_bottom="8rem",
+            ),
+
               multi(),
               card(),
               try_some_toast(),

@@ -12,10 +12,10 @@ def navbar() -> rx.Component:
             rx.hstack(
                 rx.hstack(
                     rx.image(
-                        src="/logo.jpg",
-                        width="2.25em",
-                        height="auto",
-                        border_radius="25%",
+                        src="/logoR.png",
+                        width="3em",
+                        height="3em",
+                        border_radius="50%",
                     ),
                     rx.heading(
                         "MiguelRivas", size="2"
