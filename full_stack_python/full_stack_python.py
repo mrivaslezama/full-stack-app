@@ -59,7 +59,7 @@ def index() -> rx.Component:
                 padding_bottom="8rem",
             ),
 
-              pricing_cards(),
+            pricing_cards(),
             spacing="5",
             justify="center",
             align="center",
@@ -85,7 +85,7 @@ def nosotros() -> rx.Component:
 
 def contactanos() -> rx.Component:
     my_child = rx.vstack(
-        rx.heading("Nosotros", size="9"),
+        rx.heading("Contacto", size="9"),
         contact_form(),    
         spacing="5",
         justify="center",

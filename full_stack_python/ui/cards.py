@@ -10,7 +10,7 @@ def feature_item(feature: str) -> rx.Component:
 
 def standard_features() -> rx.Component:
     return rx.vstack(
-        rx.image(src="/tekaart.jpg",
+        rx.image(src="/proyectos.jpg",
                     width="100%",
                     height="auto",
                     ),
@@ -36,11 +36,13 @@ def popular_features() -> rx.Component:
 
 def page_content() -> rx.Component:
     return rx.vstack(
-        rx.image(src="/tekaart.jpg",
+        rx.image(src="/autana.png",
                     width="100%",
                     height="auto",
                     ),
-        rx.text("Diseño y construcción de paginas web"),
+        rx.text("Paginas web de la empresa Autana Muebles"),
+        rx.link("Visita Autana Muebles", href="https://autanaweb.vercel.app/", target="_blank"),
+        
         
         spacing="3",
         width="100%",
@@ -51,7 +53,30 @@ def page_content() -> rx.Component:
 def card1() -> rx.Component:
     return rx.vstack(
         rx.text(
-            "Diseños 3D",
+            "Desarrollo y despliegue de paginas web",
+            weight="bold",
+            size="7",
+            width="100%",
+            text_align="left",
+        ),
+       page_content(),
+        rx.spacer(),
+
+        spacing="6",
+        border=f"1.5px solid {rx.color('gray', 5)}",
+        background=rx.color("gray", 1),
+        padding="28px",
+        width="100%",
+        max_width="400px",
+        min_height="475px",
+        border_radius="0.5rem",
+    )
+
+
+def card2() -> rx.Component:
+    return rx.vstack(
+        rx.text(
+            "Desarrollo y despliegue de paginas web",
             weight="bold",
             size="7",
             width="100%",
@@ -162,6 +187,7 @@ def pricing_card_popular() -> rx.Component:
 def pricing_cards() -> rx.Component:
     return rx.flex(
         card1(),
+        card2(),
         pricing_card_standard(),
         pricing_card_popular(),
         
