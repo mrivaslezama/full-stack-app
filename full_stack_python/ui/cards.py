@@ -37,7 +37,7 @@ def popular_features() -> rx.Component:
 def page_content() -> rx.Component:
     return rx.vstack(
         rx.image(src="/autana.png",
-                    width="100%",
+                    width="20em",
                     height="auto",
                     ),
         rx.text("Paginas web de la empresa Autana Muebles"),
