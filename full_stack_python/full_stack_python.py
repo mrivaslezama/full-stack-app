@@ -58,11 +58,8 @@ def index() -> rx.Component:
                 size="7",
                 padding_bottom="8rem",
             ),
-              pricing_card_standard(),
-              pricing_card_popular(),
+
               pricing_cards(),
-              card(),
-              try_some_toast(),
             spacing="5",
             justify="center",
             align="center",
@@ -77,7 +74,7 @@ def nosotros() -> rx.Component:
     my_child = rx.vstack(
         rx.heading("Nosotros", size="9"),
         rx.text(
-            "Analisis filosoficos, políticos, sociales y tecnológicos"
+            "Emprendedor Digital, manejo el ciclo de vida del producto bajo un enfoque ágil, con la capacidad de generar MVP para ser validado en el mercado. Implementando un prototipo funcional de un aplicativo web utilizando tecnologías Ruby on Rails ó Python Reflex. "
         ),
         spacing="5",
         justify="center",
@@ -98,8 +95,6 @@ def contactanos() -> rx.Component:
     return base_page(my_child)
 
     
-
-
 app = rx.App()
 app.add_page(index)
 app.add_page(nosotros, route='nosotros')
