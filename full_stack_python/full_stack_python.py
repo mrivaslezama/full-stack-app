@@ -8,6 +8,7 @@ from .ui.contact import contact_form
 from .ui.toast import try_some_toast
 from .ui.avatar import avatar
 from .ui.base import base_page
+from .ui.cards import *
 
 
 class State(rx.State):
@@ -21,7 +22,7 @@ def index() -> rx.Component:
               avatar(),
             rx.heading("Hola, soy Miguel!", size="9"),
             rx.text(
-                "Desarrollador y asesor en tecnologías web, Ruby on Rails, Python, Reflex, postgresql y React ", size="7"
+                "Desarrollador y asesor en tecnologías web, Ruby on Rails, Python y Reflex ", size="7"
             ),
             rx.hstack(
                 rx.image(
@@ -45,20 +46,7 @@ def index() -> rx.Component:
                     border_radius="50%",
                 margin_bottom="8px",
                 ),
-                rx.image(
-                    src="/postgres.png",
-                    width="150px",
-                    height="150px",
-                    border_radius="50%",
-                margin_bottom="8px",
-                ),
-                rx.image(
-                    src="/react.png",
-                    width="150px",
-                    height="150px",
-                    border_radius="50%",
-                margin_bottom="8px",
-                )
+                
               ),
 
             rx.heading("Proyectos", 
@@ -70,8 +58,9 @@ def index() -> rx.Component:
                 size="7",
                 padding_bottom="8rem",
             ),
-
-              multi(),
+              pricing_card_standard(),
+              pricing_card_popular(),
+              pricing_cards(),
               card(),
               try_some_toast(),
             spacing="5",
