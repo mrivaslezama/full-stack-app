@@ -22,8 +22,40 @@ def index() -> rx.Component:
               avatar(),
             rx.heading("Hola, soy Miguel!", size="9"),
             rx.text(
-                "Desarrollador y asesor en tecnologías web, Ruby on Rails, Python y Reflex ", size="7"
+                "Desarrollador web", size="7"
             ),
+                
+        # Contactos --RRSS
+        rx.hstack(
+                rx.image(
+                    src="/correo-electronico-verificado.png",
+                    width="3em",
+                    height="3em",
+                    border_radius="20%",
+                margin_bottom="8px",
+                ),
+                rx.image(
+                    src="/github.png",
+                    width="3em",
+                    height="3em",
+                    border_radius="20%",
+                margin_bottom="8px",
+                ),
+                rx.image(
+                    src="/medios-de-comunicacion-social.png",
+                    width="3em",
+                    height="3em",
+                    border_radius="20%",
+                margin_bottom="8px",
+                ),
+            margin_bottom="15px",
+              
+              ),
+            #Asesor comentarios ...
+            rx.text(    
+                "Asesor en tecnologías web, Ruby on Rails, Python y Reflex ", size="7"
+            ),
+
             rx.hstack(
                 rx.image(
                     src="/rails.png",
@@ -40,14 +72,43 @@ def index() -> rx.Component:
                 margin_bottom="8px",
                 ),
                 rx.image(
-                    src="/reflex_banner.png",
+                    src="/github.png",
                     width="6em",
                     height="6em",
-                    border_radius="50%",
+                    border_radius="20%",
                 margin_bottom="8px",
                 ),
                 
               ),
+
+#Stacks ...
+
+            rx.hstack(
+                rx.image(
+                    src="/postgresql.png",
+                    width="6em",
+                    height="6em",
+                    border_radius="20%",
+                margin_bottom="8px",
+                ),
+                rx.image(
+                    src="/bootstrap.png",
+                    width="6em",
+                    height="6em",
+                    border_radius="20%",
+                margin_bottom="8px",
+                ),
+                rx.image(
+                    src="/reflex_banner.png",
+                    width="6em",
+                    height="6em",
+                    border_radius="20%",
+                margin_bottom="8px",
+                ),
+                
+              ),
+
+              # Proyectos --- galeria
 
             rx.heading("Proyectos", 
             size="9",
@@ -73,8 +134,9 @@ def index() -> rx.Component:
 def nosotros() -> rx.Component:
     my_child = rx.vstack(
         rx.heading("Nosotros", size="9"),
-        rx.text(
-            "Emprendedor Digital, manejo el ciclo de vida del producto bajo un enfoque ágil, con la capacidad de generar MVP para ser validado en el mercado. Implementando un prototipo funcional de un aplicativo web utilizando tecnologías Ruby on Rails ó Python Reflex. "
+        rx.text("Como Emprendedor Digital, manejo el ciclo de vida del producto bajo un enfoque ágil, con la capacidad de generar MVP para ser validados en el mercado. "            
+        ),
+        rx.text("Implementa prototipos funcionales de aplicativos web utilizando tecnologías Ruby on Rails ó Python Reflex. "            
         ),
         spacing="5",
         justify="center",
