@@ -20,9 +20,16 @@ class State(rx.State):
 def index() -> rx.Component:
     my_child = rx.vstack(
               avatar(),
-            rx.heading("Hola, soy Miguel!", size="9"),
+            rx.heading("Hola, soy Miguel!", 
+            size="9",
+            justify="center",
+            aling="center",
+            ),
             rx.text(
-                "Desarrollador web", size="7"
+                "Desarrollador web", 
+                size="7",
+                justify="center",
+                aling="center",
             ),
                 
         # Contactos --RRSS
@@ -32,28 +39,31 @@ def index() -> rx.Component:
                     width="3em",
                     height="3em",
                     border_radius="20%",
-                margin_bottom="8px",
+                    margin_bottom="8px",
                 ),
                 rx.image(
                     src="/github.png",
                     width="3em",
                     height="3em",
                     border_radius="20%",
-                margin_bottom="8px",
+                    margin_bottom="8px",
                 ),
                 rx.image(
                     src="/medios-de-comunicacion-social.png",
                     width="3em",
                     height="3em",
                     border_radius="20%",
-                margin_bottom="8px",
+                    margin_bottom="8px",
                 ),
             margin_bottom="15px",
-              
               ),
+              
             #Asesor comentarios ...
             rx.text(    
-                "Asesor en tecnologías web, Ruby on Rails, Python y Reflex ", size="7"
+                "Asesor en tecnologías web, Ruby on Rails, Python y Reflex ", 
+                size="7",
+                justify="center",
+                aling="center",
             ),
 
             rx.hstack(
@@ -62,23 +72,22 @@ def index() -> rx.Component:
                     width="6em",
                     height="6em",
                     border_radius="50%",
-                margin_bottom="8px",
+                    margin_bottom="8px",
                 ),
                 rx.image(
                     src="/python.png",
                     width="6em",
                     height="6em",
                     border_radius="50%",
-                margin_bottom="8px",
+                    margin_bottom="8px",
                 ),
                 rx.image(
                     src="/github.png",
                     width="6em",
                     height="6em",
                     border_radius="20%",
-                margin_bottom="8px",
-                ),
-                
+                    margin_bottom="8px",
+                )
               ),
 
 #Stacks ...
@@ -89,24 +98,25 @@ def index() -> rx.Component:
                     width="6em",
                     height="6em",
                     border_radius="20%",
-                margin_bottom="8px",
+                    margin_bottom="8px",
                 ),
                 rx.image(
                     src="/bootstrap.png",
                     width="6em",
                     height="6em",
                     border_radius="20%",
-                margin_bottom="8px",
+                    margin_bottom="8px",
                 ),
                 rx.image(
                     src="/reflex_banner.png",
                     width="6em",
                     height="6em",
                     border_radius="20%",
-                margin_bottom="8px",
-                ),
-                
-              ),
+                    margin_bottom="8px",
+                )
+            ),
+
+    
 
               # Proyectos --- galeria
 
@@ -125,10 +135,8 @@ def index() -> rx.Component:
             justify="center",
             align="center",
             min_height="85vh",
-            id='my-child',
+            id='my-child',     
         ),
-        
-
     return base_page(my_child)   
 
 def nosotros() -> rx.Component:

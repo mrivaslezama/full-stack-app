@@ -46,13 +46,13 @@ def navbar() -> rx.Component:
             rx.hstack(
                 rx.hstack(
                     rx.image(
-                        src="/logo.jpg",
+                        src="/logoMR.png",
                         width="2em",
-                        height="auto",
-                        border_radius="25%",
+                        height="2em",
+                        border_radius="50%",
                     ),
                     rx.heading(
-                        "Reflex", size="6", weight="bold"
+                        "MiguelRivas", size="6", weight="bold"
                     ),
                     align_items="center",
                 ),
