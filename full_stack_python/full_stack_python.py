@@ -31,6 +31,7 @@ def index() -> rx.Component:
                 justify="center",
                 aling="center",
             ),
+
                 
         # Contactos --RRSS
         rx.hstack(
@@ -45,6 +46,7 @@ def index() -> rx.Component:
                 href="https://github.com/mrivaslezama",
                 target="_blank",
              ),
+
 
              rx.link(
                 rx.avatar(

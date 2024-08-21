@@ -195,12 +195,7 @@ def pricing_cards() -> rx.Component:
                     card2(),
                     border_radius="20%",
                    
-                ),
-                rx.flex(
-                    card1(),
-                    border_radius="20%",
-                   
-                ),
+                )
             ),
     
     
