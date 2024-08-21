@@ -185,12 +185,22 @@ def pricing_card_popular() -> rx.Component:
 
 
 def pricing_cards() -> rx.Component:
-    return rx.flex(
-        card1(),
-        card2(),
-        
-        spacing="6",
-        flex_direction=["column", "column", "row"],
-        width="100%",
-        align_items="center",
-    )
+    return rx.hstack(
+                rx.flex(
+                    card1(),
+                    border_radius="20%",
+                   
+                ),
+                rx.flex(
+                    card2(),
+                    border_radius="20%",
+                   
+                ),
+                rx.flex(
+                    card1(),
+                    border_radius="20%",
+                   
+                ),
+            ),
+    
+    

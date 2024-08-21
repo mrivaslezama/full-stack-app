@@ -34,30 +34,43 @@ def index() -> rx.Component:
                 
         # Contactos --RRSS
         rx.hstack(
-                rx.image(
+             rx.link(
+                rx.avatar(
                     src="/correo-electronico-verificado.png",
                     width="3em",
                     height="3em",
                     border_radius="20%",
                     margin_bottom="8px",
                 ),
-                rx.image(
+                href="https://github.com/mrivaslezama",
+                target="_blank",
+             ),
+
+             rx.link(
+                rx.avatar(
                     src="/github.png",
                     width="3em",
                     height="3em",
                     border_radius="20%",
                     margin_bottom="8px",
-                ),
-                rx.image(
+              ),
+                href="https://github.com/mrivaslezama",
+                target="_blank",
+             ),
+
+             rx.link(
+                rx.avatar(
                     src="/medios-de-comunicacion-social.png",
                     width="3em",
                     height="3em",
                     border_radius="20%",
                     margin_bottom="8px",
                 ),
-            margin_bottom="15px",
-              ),
-              
+                
+                href="https://x.com/mrivaslezama",
+                target="_blank",
+            ),
+           ),     
             #Asesor comentarios ...
             rx.text(    
                 "Asesor en tecnologías web, Ruby on Rails, Python y Reflex ", 
