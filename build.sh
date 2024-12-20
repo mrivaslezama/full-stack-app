@@ -8,5 +8,5 @@ unzip frontend.zip -d public
 rm -f frontend.zip
 deactivate
 git add .
-git commit -m "build1"
+git commit -m "optimizing1"
 git push
