@@ -140,9 +140,18 @@ def index() -> rx.Component:
             padding_top="8rem"
             ),
             rx.text(
-                "Proyectos desarrollados y activos", 
+                "Proyectos desarrollados", 
                 size="7",
                 padding_bottom="8rem",
+
+                
+            ),
+            rx.vstack(
+                rx.link("Ejercicio ruby on rails, sitio de noticias", href="https://therialnews-thrumming-wind-7180.fly.dev/", target="_blank"),
+                rx.link("Ejercicio ruby on rails, app Crazy4cats", href="https://crazy4cats.fly.dev/", target="_blank"),
+                rx.link("Ejercicio, sitio de viajes", href="https://mrivaslezama.github.io/pruebaviajeschile/", target="_blank"),
+                
+
             ),
 
             pricing_cards(),
