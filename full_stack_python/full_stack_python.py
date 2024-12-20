@@ -84,22 +84,22 @@ def index() -> rx.Component:
             rx.hstack(
                 rx.image(
                     src="/rails.png",
-                    width="6em",
-                    height="6em",
+                    width="5em",
+                    height="5em",
                     border_radius="50%",
                     margin_bottom="8px",
                 ),
                 rx.image(
                     src="/python.png",
-                    width="6em",
-                    height="6em",
+                    width="5em",
+                    height="5em",
                     border_radius="50%",
                     margin_bottom="8px",
                 ),
                 rx.image(
                     src="/github.png",
-                    width="6em",
-                    height="6em",
+                    width="5em",
+                    height="5em",
                     border_radius="20%",
                     margin_bottom="8px",
                 )
@@ -110,22 +110,22 @@ def index() -> rx.Component:
             rx.hstack(
                 rx.image(
                     src="/postgresql.png",
-                    width="6em",
-                    height="6em",
+                    width="5em",
+                    height="5em",
                     border_radius="20%",
                     margin_bottom="8px",
                 ),
                 rx.image(
                     src="/bootstrap.png",
-                    width="6em",
-                    height="6em",
+                    width="5em",
+                    height="5em",
                     border_radius="20%",
                     margin_bottom="8px",
                 ),
                 rx.image(
                     src="/reflex_banner.png",
-                    width="6em",
-                    height="6em",
+                    width="5em",
+                    height="5em",
                     border_radius="20%",
                     margin_bottom="8px",
                 )

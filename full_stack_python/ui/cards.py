@@ -36,12 +36,12 @@ def popular_features() -> rx.Component:
 
 def page_content() -> rx.Component:
     return rx.vstack(
-        rx.image(src="/autana.png",
-                    width="20em",
+        rx.image(src="/autanamuebles.png",
+                    width="15em",
                     height="auto",
                     ),
-        rx.text("Paginas web de la empresa Autana Muebles"),
-        rx.link("Visita Autana Muebles", href="https://autanaweb.vercel.app/", target="_blank"),
+        rx.text("Pagina web de la empresa Autana Muebles"),
+        rx.link("Visita Autana Muebles", href="https://mrivaslezama.github.io/autanas/", target="_blank"),
         
         
         spacing="3",
@@ -53,7 +53,7 @@ def page_content() -> rx.Component:
 def card1() -> rx.Component:
     return rx.vstack(
         rx.text(
-            "Desarrollo y despliegue de paginas web",
+            "Pagina web",
             weight="bold",
             size="7",
             width="100%",
@@ -72,17 +72,32 @@ def card1() -> rx.Component:
         border_radius="0.5rem",
     )
 
+def page_content2() -> rx.Component:
+    return rx.vstack(
+        rx.image(src="/Tiaromy.png",
+                    width="15em",
+                    height="auto",
+                    ),
+        rx.text("Pagina web del restaurant La Tia Romy"),
+        rx.link("Visita La Tia Romy", href="https://mrivaslezama.github.io/latiaromyrestaurante/", target="_blank"),
+        
+        
+        spacing="3",
+        width="100%",
+        align_items="start",
+    )
+
 
 def card2() -> rx.Component:
     return rx.vstack(
         rx.text(
-            "Desarrollo y despliegue de paginas web",
+            "Pagina web",
             weight="bold",
             size="7",
             width="100%",
             text_align="left",
         ),
-       page_content(),
+       page_content2(),
         rx.spacer(),
 
         spacing="6",
